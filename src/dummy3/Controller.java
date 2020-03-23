@@ -8,24 +8,24 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class Controller {
 
+	//Page openers
+	
 	@FXML
 	private void openMainPage(ActionEvent event) throws IOException {
 		openPage(event, "MainPage");
-		System.out.println("main");
 	}
 	@FXML
 	private void openHelpPage(ActionEvent event) throws IOException {
 		openPage(event, "HelpPage");
-		System.out.println("help");
 	}
 	@FXML
 	private void openSettingPage(ActionEvent event) throws IOException {
 		openPage(event, "SettingPage");
-		System.out.println("setting");
 	}
 	@FXML
 	private void openViewExistingCmdPage(ActionEvent event) throws IOException {
@@ -47,6 +47,27 @@ public class Controller {
 	}
 	
 	
+	//Functions
+
+	//MainPage
+	@FXML
+	private void openButtonPressed(){
+		//Run the command on the text field
+		System.out.println("Open pressed");
+		
+		//Find if the cmd exist
+	}
+	
+	@FXML
+	private void keyPressed(KeyEvent event) {
+		switch(event.getCode()) {
+		case ENTER:
+			openButtonPressed();
+			break;
+		default:
+			return;
+		}		
+	}
 	
 	
 }
