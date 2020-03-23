@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="dummy1.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="163.0" layoutY="27.0" text="Help">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="265.0" layoutY="251.0" text="Back to menu" onAction="#mainMenu" />
+   </children>
+</AnchorPane>

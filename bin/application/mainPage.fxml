@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="97.0" layoutY="26.0" text="Fast Opener">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="19.0" layoutY="88.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button layoutX="220.0" layoutY="88.0" mnemonicParsing="false" onAction="#runCommand" prefHeight="25.0" prefWidth="52.0" text="Run" />
+      <Button layoutX="237.0" layoutY="161.0" mnemonicParsing="false" onAction="#openSetting" text="Setting" />
+      <Button layoutX="191.0" layoutY="161.0" mnemonicParsing="false" text="View" onAction="#openView" />
+   </children>
+</AnchorPane>
