@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrationTest1.Controller">
+   <children>
+      <Label layoutX="125.0" layoutY="22.0" text="Setting">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="253.0" layoutY="163.0" onAction="#openMainPage" text="Back" />
+      <Button layoutX="46.0" layoutY="65.0" mnemonicParsing="false" onAction="#openAddNewCmdPage" prefHeight="25.0" prefWidth="210.0" text="Add New Command" />
+      <Button layoutX="46.0" layoutY="100.0" mnemonicParsing="false" onAction="#openViewExistingCmdPage" prefHeight="25.0" prefWidth="210.0" text="View Existing Commands" />
+   </children>
+</AnchorPane>

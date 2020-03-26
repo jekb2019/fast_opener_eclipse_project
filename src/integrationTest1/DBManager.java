@@ -1,4 +1,4 @@
-package backend2;
+package integrationTest1;
 
 public class DBManager {
 

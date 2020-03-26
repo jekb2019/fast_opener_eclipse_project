@@ -1,19 +1,10 @@
-package backend2;
+package integrationTest1;
 
 //This class represents Model of the MVC
 public class Runner {
 	
 	//DBManager instance
 	DBManager dbManager = new DBManager();
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		//Try opening Google
-		WebOpener.openWeb("www.google.com");	
-
-	}
-
 	
 	
 	//To WebOpener
@@ -23,16 +14,23 @@ public class Runner {
 	 */
 	void runCmd(String cmd) {
 		//with provided cmd, open the website
-		
+	
 		//Find corresponding Url
 		String url = getUrl(cmd);
+		
+		/**
+		 * DUMMY ALERT! 그냥 google.com으로 해보자!
+		 */
+		url = "www.google.com";
+
+		
 		//Open website using webOpener
-		WebOpener.openWeb(cmd);
+		WebOpener.openWeb(url);
+
 	}
 	
 	
 	//To DBManager
-	
 
 	/**
 	 * Get URL of a cmd

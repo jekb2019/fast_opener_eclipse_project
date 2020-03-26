@@ -1,4 +1,4 @@
-package backend2;
+package integrationTest1;
 
 import java.net.URI;
 
@@ -14,7 +14,6 @@ public class WebOpener {
 			java.awt.Desktop.getDesktop().browse(uri);
 
 		} catch (Exception e) {
-			System.out.println("ERROR!");
 			e.printStackTrace();
 		}
 
