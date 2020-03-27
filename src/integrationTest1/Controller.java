@@ -14,8 +14,16 @@ import javafx.stage.Stage;
 
 public class Controller {
 
+	//MainPage Fields
 	@FXML
 	TextField cmdBox;
+	
+	//AddNewCmdPage Fields
+	@FXML
+	TextField newCmdBox;
+	@FXML
+	TextField newUrlBox;
+	
 	
 	Runner model = new Runner();
 	Scene currentScene = null;
@@ -36,6 +44,8 @@ public class Controller {
 	@FXML
 	private void openViewExistingCmdPage(ActionEvent event) throws IOException {
 		openPage(event, "ViewExistingCmdPage");
+		//update existing commands
+		showExistingCmd();
 	}
 	@FXML
 	private void openAddNewCmdPage(ActionEvent event) throws IOException {
@@ -74,14 +84,12 @@ public class Controller {
 		 * DUMMY ALERT!!
 		 */
 		System.out.println("Open pressed");
-		run(cmdBoxText);
-		
-		
+		run(cmdBoxText);	
 
 	}
 	
 	@FXML
-	private void keyPressed(KeyEvent event) {
+	private void main_keyPressed(KeyEvent event) {
 		switch(event.getCode()) {
 		case ENTER:
 			openButtonPressed();
@@ -91,8 +99,27 @@ public class Controller {
 		}		
 	}
 	
+	
 	private void run(String cmd) {
 		model.runCmd(cmd);
 	}
+	
+	//AddNewCmdPage
+	@FXML
+	private void saveNewCmdUrl(ActionEvent event) {
+		//If same cmd exist, just override.
+		/**
+		 * DUMMY ALERT!
+		 */
+		System.out.println("New Cmd: " + this.newCmdBox.getText());
+		System.out.println("New Url: " + this.newUrlBox.getText());
+	}
+	
+
+	//ViewExistingCmdPage
+	private void showExistingCmd() {
+		
+	}
+	
 	
 }

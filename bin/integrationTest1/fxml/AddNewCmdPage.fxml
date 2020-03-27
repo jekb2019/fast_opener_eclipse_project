@@ -18,14 +18,14 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="106.0" layoutY="60.0" prefHeight="25.0" prefWidth="179.0" />
-      <TextField layoutX="107.0" layoutY="95.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="newCmdBox" layoutX="106.0" layoutY="60.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="newUrlBox" layoutX="107.0" layoutY="95.0" prefHeight="25.0" prefWidth="179.0" />
       <Label layoutX="27.0" layoutY="98.0" text="Website URL:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="119.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Save" />
+      <Button layoutX="119.0" layoutY="138.0" mnemonicParsing="false" onAction="#saveNewCmdUrl" prefHeight="25.0" prefWidth="63.0" text="Save" />
       <Hyperlink layoutX="252.0" layoutY="169.0" onAction="#openSettingPage" text="Back" />
    </children>
 </AnchorPane>
