@@ -16,10 +16,7 @@ public class DBManager {
 		// TODO Auto-generated method stub
 		
 		
-		readAllText("Database.txt");
-		addCmdUrl("cv","canvas.com");
 
-		removeEmptyLine("Database.txt");
 	}
 
 	//Given a line in a text file, identify command
@@ -117,6 +114,6 @@ public class DBManager {
 	private static void changeUrl(String cmd){
 			
 	}
-	
+	//set up database. If database does not exist, make one
 	
 }
