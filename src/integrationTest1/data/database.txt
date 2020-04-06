@@ -1,8 +1,7 @@
 ggl<www.google.com
 fb<www.facebook.com
-ghasda<gitbusasda
-asd<asd
-gh<www.github.com
-n<www.naver.com
-d<daum.net
-dd<www.daum.net
+gh<https://github.com/
+303<https://canvas.auckland.ac.nz/courses/46284
+350<https://canvas.auckland.ac.nz/courses/47849
+364<https://canvas.auckland.ac.nz/courses/47894
+351<https://canvas.auckland.ac.nz/courses/47851
