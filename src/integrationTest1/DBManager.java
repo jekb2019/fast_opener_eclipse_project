@@ -8,9 +8,10 @@ import java.io.Writer;
 
 public class DBManager {
 
+	File database = null;
+	String dbDir = "./src/integrationTest1/data/database.txt";
+
 	{
-		System.out.println("Working Directory = " +
-				System.getProperty("user.dir"));
 		initializeDB();
 	}
 
@@ -20,7 +21,7 @@ public class DBManager {
 	}
 	//This method creates DB text file (if it does not exist)
 	private void initializeDB() {
-		File database = new File("./src/integrationTest1/data/database.txt");
+		this.database = new File(this.dbDir);
 		if(!database.exists()) {
 			try {
 				database.createNewFile();
@@ -30,8 +31,8 @@ public class DBManager {
 			//Put default cmd/url pairs in database.txt (google and facebook)
 			Writer output;
 			try {
-				output = new BufferedWriter(new FileWriter("./src/integrationTest1/data/database.txt",true));
-				output.append("ggl<www.google.com\n").append("fb<www.facebook.com\n");
+				output = new BufferedWriter(new FileWriter(this.database,true));
+				output.append("ggl<www.google.com\n").append("fb<www.facebook.com");
 				output.close();
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -45,8 +46,28 @@ public class DBManager {
 	}
 	void addNewCmdUrl(String cmd, String url) {
 		//add new command/url pair to DB
+		String pair = "\n"+cmd + "<" + url;
 
+		Writer output;
+		try {
+			output = new BufferedWriter(new FileWriter(this.dbDir,true));
+			output.append(pair);
+			output.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
+	
+	//This method checks duplicate cmd/url pair (INCOMPLETE)
+	boolean checkDuplicate(String cmd, String url) {
+		if(true) {
+			//if duplicate return true
+			return true;
+		}
+		return false;
+	}
+	
 	void deleteCmd(String cmd) {
 		//in DB, delete an existing command/url pair of the provided command
 	}

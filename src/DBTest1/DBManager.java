@@ -58,6 +58,9 @@ public class DBManager {
 	
 	//Add new cmd/url line to text file
 	private static void addCmdUrl(String cmd, String url) {
+		//If same cmd exist, just override.	
+		
+		
 		String pair = "\n"+cmd + "<" + url;
 		
 		Writer output;

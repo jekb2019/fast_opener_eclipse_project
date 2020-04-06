@@ -107,12 +107,11 @@ public class Controller {
 	//AddNewCmdPage
 	@FXML
 	private void saveNewCmdUrl(ActionEvent event) {
-		//If same cmd exist, just override.
-		/**
-		 * DUMMY ALERT!
-		 */
-		System.out.println("New Cmd: " + this.newCmdBox.getText());
-		System.out.println("New Url: " + this.newUrlBox.getText());
+		if(this.newCmdBox.getText().equals("") ||this.newUrlBox.getText().equals("")) {
+			return;
+		}
+		System.out.println("text: "+this.newCmdBox.getText());
+		model.addNewCmdUrl(this.newCmdBox.getText(), this.newUrlBox.getText());
 	}
 	
 
