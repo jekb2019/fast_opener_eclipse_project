@@ -70,20 +70,7 @@ public class Controller {
 	private void openButtonPressed(){
 		//Run the command on the text field
 		//Find out the content of the text field
-
 		String cmdBoxText = cmdBox.getText();
-		/**
-		 * DUMMY ALERT!!
-		 */
-		System.out.println("Command: "+cmdBoxText);
-		
-
-		
-		//Find if the cmd exist		
-		/**
-		 * DUMMY ALERT!!
-		 */
-		System.out.println("Open pressed");
 		run(cmdBoxText);	
 
 	}
@@ -101,7 +88,9 @@ public class Controller {
 	
 	
 	private void run(String cmd) {
-		model.runCmd(cmd);
+		if(!model.runCmd(cmd)) {
+			
+		}
 	}
 	
 	//AddNewCmdPage

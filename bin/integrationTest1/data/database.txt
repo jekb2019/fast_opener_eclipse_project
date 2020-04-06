@@ -1,3 +1,8 @@
 ggl<www.google.com
 fb<www.facebook.com
-nv<www.naver.com
+ghasda<gitbusasda
+asd<asd
+gh<www.github.com
+n<www.naver.com
+d<daum.net
+dd<www.daum.net

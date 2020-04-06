@@ -15,6 +15,7 @@ public class WebOpener {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println("ERROR with url: " +url);
 		}
 
 

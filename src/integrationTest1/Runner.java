@@ -12,21 +12,19 @@ public class Runner {
 	/** 
 	 * User types in a specific command(that is already in the DB) and press "Go" button to open the website
 	 */
-	void runCmd(String cmd) {
+	boolean runCmd(String cmd) {
 		//with provided cmd, open the website
 	
 		//Find corresponding Url
 		String url = getUrl(cmd);
-		
-		/**
-		 * DUMMY ALERT! 그냥 google.com으로 해보자!
-		 */
-		url = "www.google.com";
 
-		
+		//if no matching cmd/url
+		if(url == null) {
+			return false;
+		}
 		//Open website using webOpener
 		WebOpener.openWeb(url);
-
+		return true;
 	}
 	
 	
