@@ -1,4 +1,4 @@
-# fast_opener_eclipse_project
+# Fast Opener
 
 This program provides user-defined shortcut commands to visit frequently visited websites.
 
